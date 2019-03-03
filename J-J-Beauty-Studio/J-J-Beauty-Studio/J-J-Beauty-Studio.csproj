@@ -11,12 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-<<<<<<< HEAD
-    <Folder Include="wwwroot\images\" />
-=======
+   <Folder Include="Models\" />
     <Folder Include="wwwroot\css\" />
->>>>>>> d70f657e1fd0835407ce3afac2494dfcea0fc1d6
+    <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 
