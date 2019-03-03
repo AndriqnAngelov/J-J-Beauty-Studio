@@ -1,17 +1,28 @@
 ﻿@{
     ViewData["Title"] = "Contact";
 }
-<h2>@ViewData["Title"]</h2>
+
 <h3>@ViewData["Message"]</h3>
+<div class="ContactLeft">
+    <div class="mapouter">
+        <div class="gmap_canvas">
+            <iframe width="880" height="500" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=%D1%83%D0%BB.%D0%9C%D0%B8%D1%80%203%20Varna%2C%20Bulgaria&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+    </div>
+</div>
+<div class="ContactRight">
+    <address>
+        <h2>ул. Мир 3</h2>
+        <h2>Варна България</h2>
+    </address>
+    <h2>
+        <a href="https://www.google.com/maps/dir//43.2238277,27.9295922/@@43.223828,27.929592,15z?hl=bg-BG">Упътване</a>
+    </h2>
+    <address>
+        <h2>Обаждане: 089 975 3711</h2>
+    </address>
+</div>
 
-<address>
-    One Microsoft Way<br />
-    Redmond, WA 98052-6399<br />
-    <abbr title="Phone">P:</abbr>
-    425.555.0100
-</address>
 
-<address>
-    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
-    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
-</address>

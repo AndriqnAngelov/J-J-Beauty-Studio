@@ -11,6 +11,9 @@
 nav a {
     display: inline-block;
 }
+a{
+    color:white;
+}
 
 .Logo {
     height: 85px;
@@ -73,6 +76,36 @@ main {
     float: left;
     width: 55%;
 }
+
 body {
     background-image: url("../images/uCepga.jpg");
+}
+
+.ContactLeft {
+    float:left;
+    border-style: solid;
+    border-color: purple;
+    height: 500px;
+    width: 880px;
+}
+.ContactRight {
+    border-style: solid;
+    border-color: white;
+    float: right;
+    height: 500px;
+    width: 510px;
+    text-align:center;
+    color:white;
+}
+
+.mapouter {
+    height: 500px;
+    width: 880px;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 880px;
 }
