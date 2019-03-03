@@ -1,0 +1,15 @@
+Nav bar{
+Logo, Начало, Услуги,Курсове, Галерия, За нас, Контакти
+Лого в ляво, линковете в дясно
+Фонт - google Roboto;
+Color - purple;
+Linkove - white;
+}
+Header{
+sniki vyrtene
+}
+Main{
+Font - google Srisakdi;
+kvadrati - purple
+opisanie na uslugi
+}

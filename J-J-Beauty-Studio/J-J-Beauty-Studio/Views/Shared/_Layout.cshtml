@@ -6,18 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>J&J Beauty Studio</title>
     <title>J&J</title>
-    <style>
-    </style>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
 </head>
 <body>
-    <ul>
-        <li><a asp-area="" asp-controller="Home" asp-action="Index">Начало</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Services">Услуги</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Courses">Курсове</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Gallery">Галерия</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="About">За нас</a></li>
-        <li><a asp-area="" asp-controller="Home" asp-action="Contact">Контакти</a></li>
-    </ul>
+    <nav class="main-navigation">
+        
+        <ul class="navUL">
+            <li class="navLi"><a class="Link" asp-controller="Home" asp-action="Index">Начало</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Services">Услуги</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Courses">Курсове</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Gallery">Галерия</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="About">За нас</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Contact">Контакти</a></li>
+        </ul>
+    </nav>
     @RenderBody()
 </body>
 </html>
