@@ -1,6 +1,3 @@
-# J-J-Beauty-Studio
-<<<<<<< HEAD
-Andriqn
-=======
-Ivan is here
+# J-J-Beauty-Studio.
+# Open project to create a website.
 
