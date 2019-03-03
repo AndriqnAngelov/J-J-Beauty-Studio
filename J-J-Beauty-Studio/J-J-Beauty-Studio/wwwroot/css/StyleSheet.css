@@ -73,3 +73,6 @@ main {
     float: left;
     width: 55%;
 }
+body {
+    background-image: url("../images/uCepga.jpg");
+}
