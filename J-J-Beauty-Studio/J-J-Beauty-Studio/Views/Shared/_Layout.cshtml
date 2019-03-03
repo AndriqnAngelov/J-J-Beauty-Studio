@@ -12,9 +12,9 @@
 </head>
 <body>
     <nav class="main-navigation">
-        <a class ="Link" href="#"><img class="Logo" src="~/images/Logo.jpg" /></a>
+        <a class="Link" asp-area="" asp-controller="Home" asp-action="Index"><img class="Logo" src="~/images/Logo.jpg" /></a>
         <ul class="navUL">
-            <li class="navLi"><a class="Link" asp-controller="Home" asp-action="Index">Начало</a></li>
+            <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Index">Начало</a></li>
             <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Services">Услуги</a></li>
             <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Courses">Курсове</a></li>
             <li class="navLi"><a class="Link" asp-area="" asp-controller="Home" asp-action="Gallery">Галерия</a></li>
@@ -23,8 +23,7 @@
         </ul>
     </nav>
     <main>
-        <p>Създадохме салон J&J с увереността, че всяка жена носи красотата в себе си. Нашата мисия е да ви показваме колко прекрасни в действителност сте, а вие го демонстрирайте на останалия свят! J&J ще ви посрещне с приятна атмосфера, обгърната с бонбонени цветове, а внимателното отношение, ведрост и ТЪРПЕНИЕ на нашите професионалисти ще допълнят сладостта на усещането, че сте попаднали на правилното място. Потърсете ни, ако имате нужда да си подарите самочувствие и щастие или просто да си почнете! Ние сме тук, винаги отзивчиви и компетентни!</p>
+        @RenderBody()
     </main>
-    @RenderBody()
 </body>
 </html>
