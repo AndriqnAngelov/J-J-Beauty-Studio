@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using J_J_Beauty_Studio.Models;
+using System.Net.Mail;
 
 namespace J_J_Beauty_Studio.Controllers
 {
@@ -40,7 +41,46 @@ namespace J_J_Beauty_Studio.Controllers
 
             return View();
         }
-
+        [HttpGet]
+        public IActionResult LogIn()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult LogIn(User login)
+        {
+            var user = login;
+            if (user.IsAdmin())
+            {
+                return RedirectToAction("Index", "Admin", new { area = "" });
+            }
+            return View();
+        }
+        [HttpGet]
+        public IActionResult Preservation()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult Preservation(Preservation preservation)
+        {
+            //MailMessage mail = new MailMessage("andriqnangelov@gmail.com", "jjbeautystudio@gmail.com");
+            //SmtpClient client = new SmtpClient();
+            //client.Port = 25;
+            //client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            //client.UseDefaultCredentials = false;
+            //client.Host = "smtp.gmail.com";
+            //mail.Subject = "this is a test email.";
+            //mail.Body = "this is my test email body";
+            //client.Send(mail);
+            using (var db = new DbConnect())
+            {
+                db.preservation.Add(preservation);
+                db.SaveChanges();
+            }
+            return RedirectToAction("Index");
+        }
+        
         //public IActionResult Privacy()
         //{
         //    return View();

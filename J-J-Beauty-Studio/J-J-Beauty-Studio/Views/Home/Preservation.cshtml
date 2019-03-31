@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "Preservation";
+}
+
+<h2>Preservation</h2>
+
+@using (Html.BeginForm("Preservation", "Home", FormMethod.Post))
+{
+    <div align="center">
+        <table>
+            <tr>
+                <td>Дата: <input type="text" name="date"></td>
+                <td>Час: <input type="text" name="time"></td>
+                <td>Име и Фамилия: <input type="text" name="name"></td>
+                <td>Емайл: <input type="text" name="email"></td>
+        </table>
+        <br />
+        <input class="button" type="submit" value="Запази">
+    </div>
+}
+

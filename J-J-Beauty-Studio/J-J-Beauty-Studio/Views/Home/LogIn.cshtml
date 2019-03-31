@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "LogIn";
+}
+
+<h2>LogIn</h2>
+
+@using (Html.BeginForm("LogIn", "Home", FormMethod.Post))
+{
+    <div align="center">
+        <table>
+            <tr>
+                <td>UserName: <input type="text" name="username"></td>
+                <td>Password: <input type="text" name="password"></td>
+        </table>
+        <br />
+        <input class="button" type="submit" value="Влез">
+    </div>
+}

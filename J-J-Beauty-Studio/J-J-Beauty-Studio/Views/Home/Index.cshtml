@@ -1,9 +1,11 @@
-﻿@{
+﻿@model List<J_J_Beauty_Studio.Models.Preservation>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <h1>J-J-Beauty-Studio</h1>
-<section class="SectionLeft AbouteStile" >
+<section class="SectionLeft AbouteStile">
     <p>
         Създадохме салон J&J с увереността, че всяка жена носи красотата в себе си.
         Нашата мисия е да ви показваме колко прекрасни в действителност сте, а вие го демонстрирайте на останалия свят!
@@ -12,3 +14,6 @@
         Ние сме тук, винаги отзивчиви и компетентни!
     </p>
 </section>
+<div>
+    <a class="Link" asp-area="" asp-controller="Home" asp-action="Preservation">Запази Час</a>
+</div>

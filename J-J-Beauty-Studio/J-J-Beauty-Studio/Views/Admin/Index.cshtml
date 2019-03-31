@@ -1,0 +1,21 @@
+﻿@model List<J_J_Beauty_Studio.Models.Preservation>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<div>
+    <ul>
+        @foreach (var item in Model.ToList())
+        {
+            <li>
+                <h1>@item.Date</h1>
+                <h1>@item.Time</h1>
+                <h1>@item.Name</h1>
+                <h1>@item.Email</h1>
+            </li>
+        }
+    </ul>
+</div>
